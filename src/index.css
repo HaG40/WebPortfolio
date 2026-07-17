@@ -44,3 +44,18 @@ body {
 .border-theme {
   border-color: var(--color-border);
 }
+
+::selection {
+    background: var(--color-primary);
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+a {
+    transition: var(--transition-fast);
+}

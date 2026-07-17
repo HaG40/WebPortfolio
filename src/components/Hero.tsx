@@ -12,13 +12,13 @@ const Hero = () => {
                         Computer Science • Cloud Computing
                     </p>
 
-                    <h1 className="mb-6 text-5xl font-bold uppercase leading-none text-main md:text-6xl xl:text-7xl">
+                    <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase leading-none text-main">
                         HADSAPONG
                         <br />
                         LEE
                     </h1>
 
-                    <p className="mb-8 max-w-2xl leading-8 text-secondary">
+                    <p className="mb-8 max-w-2xl leading-8 text-base md:text-lg text-secondary">
                         Passionate Computer Science student with interests in
                         Full-Stack Web Development, Cloud Computing, and
                         Software Engineering. I enjoy building modern,

@@ -1,17 +1,24 @@
-import { type ReactNode } from "react";
+import type { ReactNode } from "react";
 
-type CardProps = {
+interface CardProps {
     children: ReactNode;
     className?: string;
-};
+}
 
 const Card = ({ children, className = "" }: CardProps) => {
     return (
         <div
             className={`
-                rounded-xl
+                rounded-[18px]
                 border
+                border-theme
+                bg-surface
                 p-6
+                shadow-lg
+                transition-all
+                duration-300
+                hover:border-primary
+                hover:-translate-y-1
                 ${className}
             `}
         >

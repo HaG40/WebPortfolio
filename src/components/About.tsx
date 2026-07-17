@@ -13,7 +13,7 @@ const About = () => {
             <div className="grid gap-10 lg:grid-cols-[320px_1fr] lg:items-start">
                 {/* Profile */}
                 <Card className="overflow-hidden">
-                    <div className="aspect-square">
+                    <div className="mx-auto max-w-sm lg:max-w-none">
                         <img
                             src="src/assets/profile/profile.jpg"
                             alt="Profile"

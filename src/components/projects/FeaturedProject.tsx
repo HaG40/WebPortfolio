@@ -14,7 +14,7 @@ const FeaturedProject = () => {
                         <img
                             src={featuredProject.images[0]}
                             alt={featuredProject.title}
-                            className="h-full w-full object-cover"
+                            className="h-full w-full object-cover transition duration-500 hover:scale-105"
                         />
                     </div>
                 </div>
