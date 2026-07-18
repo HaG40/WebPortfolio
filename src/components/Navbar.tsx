@@ -12,14 +12,15 @@ const Navbar = () => {
           <a href="#home" className="flex items-center gap-3">
             {/* Mono Eye */}
             <span
-              className="
-                                h-2.5
-                                w-2.5
-                                rounded-full
-                                bg-primary
-                                shadow-[0_0_10px_rgba(200,69,69,0.8)]
-                                animate-pulse
-                            "
+                className="
+                  mono-eye
+                  h-2.5
+                  w-2.5
+                  rounded-full
+                  bg-primary
+                  shadow-[0_0_12px_rgba(200,69,69,.8)]
+                  animate-pulse
+                "
             />
 
             <span className="text-lg font-bold uppercase tracking-[0.2em] text-main">
@@ -55,6 +56,7 @@ const Navbar = () => {
                                     after:duration-300
 
                                     hover:after:w-full
+                                    animate-pulse
                                 "
               >
                 {item.label}

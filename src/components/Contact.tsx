@@ -1,5 +1,6 @@
 import { FaEnvelope, FaGithub } from "react-icons/fa6";
 
+import FadeIn from "@/components/common/FadeIn";
 import Card from "@/components/common/Card";
 import Section from "@/components/common/Section";
 import SectionTitle from "@/components/common/SectionTitle";
@@ -7,6 +8,15 @@ import SectionTitle from "@/components/common/SectionTitle";
 import { contact } from "@/data/contact";
 
 const Contact = () => {
+    const copyEmail = async () => {
+        try {
+            await navigator.clipboard.writeText(contact.email);
+            alert("Email copied!");
+        } catch {
+            alert("Unable to copy email.");
+        }
+    };
+
     return (
         <Section id="contact">
             <SectionTitle
@@ -14,27 +24,57 @@ const Contact = () => {
                 subtitle="Feel free to contact me."
             />
 
-            <Card className="mx-auto max-w-2xl">
-                <div className="space-y-6">
-                    <a
-                        href={`mailto:${contact.email}`}
-                        className="flex items-center gap-4 text-secondary transition hover:text-main"
-                    >
-                        <FaEnvelope />
-                        {contact.email}
-                    </a>
+            <FadeIn>
+                <div className="grid gap-6 md:grid-cols-2">
+                    {/* Email */}
+                    <Card className="text-center transition-all duration-300 hover:-translate-y-1 hover:opacity-95">
+                        <FaEnvelope
+                            size={34}
+                            className="mx-auto text-main"
+                        />
 
-                    <a
-                        href={contact.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-4 text-secondary transition hover:text-main"
-                    >
-                        <FaGithub />
-                        GitHub
-                    </a>
+                        <h3 className="mt-5 text-xl font-semibold text-main">
+                            Email
+                        </h3>
+
+                        <p className="mt-3 break-all text-secondary">
+                            {contact.email}
+                        </p>
+
+                        <button
+                            onClick={copyEmail}
+                            className="mt-6 cursor-pointer text-primary transition hover:opacity-90"
+                        >
+                            Copy Email
+                        </button>
+                    </Card>
+
+                    {/* GitHub */}
+                    <Card className="text-center transition-all duration-300 hover:-translate-y-1 hover:opacity-95">
+                        <FaGithub
+                            size={34}
+                            className="mx-auto text-main"
+                        />
+
+                        <h3 className="mt-5 text-xl font-semibold text-main">
+                            GitHub
+                        </h3>
+
+                        <p className="mt-3 text-secondary">
+                            github.com/HaG40
+                        </p>
+
+                        <a
+                            href={contact.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-6 inline-block text-primary transition hover:opacity-90"
+                        >
+                            Visit GitHub
+                        </a>
+                    </Card>
                 </div>
-            </Card>
+            </FadeIn>
         </Section>
     );
 };

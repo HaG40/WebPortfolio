@@ -1,21 +1,47 @@
+import { useState } from "react";
 import { FaGithub } from "react-icons/fa6";
 
 import Card from "@/components/common/Card";
 import { featuredProject } from "@/data/projects";
 
 const FeaturedProject = () => {
+    const [selectedImage, setSelectedImage] = useState(0);
+
     return (
         <Card>
             {/* Header */}
             <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
                 {/* Image */}
-                <div className="overflow-hidden rounded-xl border border-theme">
-                    <div className="aspect-video">
-                        <img
-                            src={featuredProject.images[0]}
-                            alt={featuredProject.title}
-                            className="h-full w-full object-cover transition duration-500 hover:scale-105"
-                        />
+                <div>
+                    <div className="overflow-hidden rounded-xl border border-theme">
+                        <div className="aspect-video">
+                            <img
+                                src={featuredProject.images[selectedImage]}
+                                alt={featuredProject.title}
+                                className="h-full w-full object-cover transition duration-500 hover:scale-105"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Gallery */}
+                    <div className="mt-4 grid grid-cols-4 gap-3">
+                        {featuredProject.images.map((image, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setSelectedImage(index)}
+                                className={`overflow-hidden rounded-lg border transition duration-300 hover:opacity-90 ${
+                                    selectedImage === index
+                                        ? "border-red-700"
+                                        : "border-theme"
+                                }`}
+                            >
+                                <img
+                                    src={image}
+                                    alt={`Project ${index + 1}`}
+                                    className="aspect-video w-full object-cover"
+                                />
+                            </button>
+                        ))}
                     </div>
                 </div>
 
@@ -41,12 +67,13 @@ const FeaturedProject = () => {
                         ))}
                     </div>
 
+                    {/* GitHub */}
                     {featuredProject.github && (
                         <a
                             href={featuredProject.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-8 inline-flex items-center gap-2 text-secondary transition hover:text-main"
+                            className="mt-8 inline-flex items-center gap-2 text-secondary transition hover:opacity-90 hover:text-main"
                         >
                             <FaGithub size={18} />
                             GitHub

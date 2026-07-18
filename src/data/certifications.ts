@@ -1,3 +1,9 @@
+import awsImage from "@/assets/certifications/aws-ccp.png";
+import awsPdf from "@/assets/certifications/aws-ccp.pdf";
+
+import isc2Image from "@/assets/certifications/isc2-cc.png";
+import isc2Pdf from "@/assets/certifications/isc2-cc.pdf";
+
 export type Certification = {
   title: string;
   issuer: string;
@@ -9,13 +15,13 @@ export const certifications: Certification[] = [
   {
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
-    image: "src/assets/certifications/aws-ccp.png",
-    credentialUrl: "src/assets/certifications/aws-ccp.pdf",
+    image: awsImage,
+    credentialUrl: awsPdf,
   },
   {
     title: "ISC2 Certified in Cybersecurity (CC)",
     issuer: "ISC2",
-    image: "src/assets/certifications/isc2-cc.png",
-    credentialUrl: "src/assets/certifications/isc2-cc.pdf",
+    image: isc2Image,
+    credentialUrl: isc2Pdf,
   },
 ];

@@ -3,6 +3,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 
 import AdditionalProjects from "./projects/AdditionalProjects";
 import FeaturedProject from "./projects/FeaturedProject";
+import FadeIn from "./common/FadeIn";
 
 const Projects = () => {
     return (
@@ -11,10 +12,13 @@ const Projects = () => {
                 title="Projects"
                 subtitle="A selection of projects that showcase my technical skills and development experience."
             />
+            <FadeIn>
+                <FeaturedProject />
+            </FadeIn>
 
-            <FeaturedProject />
-
-            <AdditionalProjects />
+            <FadeIn>
+                <AdditionalProjects />
+            </FadeIn>
         </Section>
     );
 };

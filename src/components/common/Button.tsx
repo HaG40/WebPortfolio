@@ -21,6 +21,7 @@ const Button = ({ children, className = "", ...props }: ButtonProps) => {
             duration-300
             hover:-translate-y-1
             hover:opacity-90
+            hover:shadow-lg
             active:translate-y-0
             ${className}
             `}

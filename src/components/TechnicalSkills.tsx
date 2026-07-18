@@ -1,3 +1,4 @@
+import FadeIn from "@/components/common/FadeIn";
 import Card from "@/components/common/Card";
 import Section from "@/components/common/Section";
 import SectionTitle from "@/components/common/SectionTitle";
@@ -46,26 +47,33 @@ const TechnicalSkills = () => {
                 subtitle="Technologies and tools I frequently use."
             />
 
-            <div className="grid gap-6 md:grid-cols-2">
-                {Object.entries(skills).map(([title, items]) => (
-                    <Card key={title}>
-                        <h3 className="mb-5 text-xl font-bold text-main">
-                            {title}
-                        </h3>
+            <FadeIn>
+                <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                    {Object.entries(skills).map(([title, items]) => (
+                        <Card
+                            key={title}
+                            className="transition-all duration-300 hover:-translate-y-1 hover:opacity-95"
+                        >
+                            <div className="mb-5 flex items-center justify-between">
+                                <h3 className="text-xl font-bold text-main">
+                                    {title}
+                                </h3>
+                            </div>
 
-                        <div className="flex flex-wrap gap-2">
-                            {items.map((item) => (
-                                <span
-                                    key={item}
-                                    className="rounded-md border border-theme px-3 py-2 text-sm text-main"
-                                >
-                                    {item}
-                                </span>
-                            ))}
-                        </div>
-                    </Card>
-                ))}
-            </div>
+                            <div className="flex flex-wrap gap-3">
+                                {items.map((item) => (
+                                    <span
+                                        key={item}
+                                        className="rounded-lg border border-theme px-4 py-2 text-sm text-main transition hover:opacity-90"
+                                    >
+                                        {item}
+                                    </span>
+                                ))}
+                            </div>
+                        </Card>
+                    ))}
+                </div>
+            </FadeIn>
         </Section>
     );
 };

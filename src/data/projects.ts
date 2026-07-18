@@ -1,3 +1,8 @@
+import job1 from "@/assets/projects/featured/job1.png";
+import job2 from "@/assets/projects/featured/job2.png";
+import job3 from "@/assets/projects/featured/job3.png";
+import job4 from "@/assets/projects/featured/job4.png";
+
 export type FeaturedProject = {
   title: string;
   shortDescription: string;
@@ -56,12 +61,7 @@ export const featuredProject: FeaturedProject = {
     "Integrated AI services",
   ],
 
-  images: [
-    "src/assets/projects/featured/job1.png",
-    "src/assets/projects/featured/job2.png",
-    "src/assets/projects/featured/job3.png",
-    "src/assets/projects/featured/job4.png",
-  ],
+  images: [job1, job2, job3, job4],
 
   github: "#",
 };

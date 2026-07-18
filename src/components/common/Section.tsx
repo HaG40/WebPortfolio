@@ -13,9 +13,9 @@ const Section = ({ id, children, className = "" }: SectionProps) => {
             id={id}
             className={`
                 scroll-mt-24
-                py-16
-                md:py-20
-                lg:py-24
+                py-8
+                md:py-12
+                lg:py-16
                 ${className}
             `}
         >
