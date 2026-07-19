@@ -2,16 +2,16 @@ import Button from "@/components/common/Button";
 import Card from "@/components/common/Card";
 import Section from "@/components/common/Section";
 import FadeIn from "@/components/common/FadeIn";
+import { FaPhoneAlt, FaEye } from "react-icons/fa";
 
 const Hero = () => {
     return (
         <Section id="home">
             <FadeIn>
                 <div className="grid items-center gap-16 lg:grid-cols-[1.3fr_0.9fr]">
-                    {/* Left */}
                     <div>
                         <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-primary">
-                            Computer Science • Cloud Computing
+                            Computer Science • Bangkok University
                         </p>
 
                         <h1 className="text-main text-5xl font-black uppercase leading-none md:text-6xl xl:text-7xl">
@@ -20,19 +20,16 @@ const Hero = () => {
                             LEE
                         </h1>
 
-                        <div className="mt-6 h-[2px] w-28 rounded-full bg-primary" />
+                        <div className="mt-6 h-0.5 w-28 rounded-full bg-primary" />
 
                         <p className="mt-8 max-w-2xl text-base leading-8 text-secondary md:text-lg">
-                            Passionate Computer Science student with interests
-                            in Full-Stack Web Development, Cloud Computing, and
-                            Software Engineering. I enjoy building modern,
-                            responsive, scalable, and user-friendly web
-                            applications while continuously learning new
-                            technologies.
+                            Interest
+                            in Backend Development, System Analysis, and System Design
                         </p>
 
                         <div className="mt-10 flex flex-wrap gap-4">
                             <Button href="#projects">
+                                <FaEye className="mr-2" />
                                 View Projects
                             </Button>
 
@@ -40,6 +37,7 @@ const Hero = () => {
                                 href="#contact"
                                 className="bg-surface border border-theme text-main hover:bg-surface-hover"
                             >
+                                <FaPhoneAlt className="mr-2" />
                                 Contact Me
                             </Button>
                         </div>
@@ -53,13 +51,11 @@ const Hero = () => {
 
                         <div className="space-y-5">
                             {[
-                                ["Status", "Online"],
+                                ["Status", "🟢 Online"],
                                 ["Education", "Computer Science"],
-                                ["Focus", "Full-Stack Development"],
-                                ["Cloud", "AWS"],
-                                ["Backend", "Go"],
-                                ["Frontend", "React"],
-                                ["Location", "Thailand"],
+                                ["Focus", "Backend Development"],
+                                ["Main Tools", "Go, Postman, PostgreSQL"],
+                                ["Location", "Bangkok, Thailand"],
                             ].map(([label, value]) => (
                                 <div
                                     key={label}

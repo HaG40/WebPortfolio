@@ -7,6 +7,13 @@ html {
 
 body {
   margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+#root {
+    min-height: 100vh;
+    background-color: var(--color-background);
 }
 
 .bg-background {
@@ -59,3 +66,22 @@ button,
 a {
     transition: var(--transition-fast);
 }
+
+@keyframes monoEye {
+
+    0%,
+    100% {
+        opacity: .8;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.25);
+    }
+}
+
+.mono-eye {
+    animation: monoEye 3.5s ease-in-out infinite;
+}
+

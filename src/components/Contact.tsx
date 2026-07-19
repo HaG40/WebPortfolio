@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 import FadeIn from "@/components/common/FadeIn";
 import Card from "@/components/common/Card";
@@ -25,7 +25,7 @@ const Contact = () => {
             />
 
             <FadeIn>
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-6 md:grid-cols-3">
                     {/* Email */}
                     <Card className="text-center transition-all duration-300 hover:-translate-y-1 hover:opacity-95">
                         <FaEnvelope
@@ -71,6 +71,31 @@ const Contact = () => {
                             className="mt-6 inline-block text-primary transition hover:opacity-90"
                         >
                             Visit GitHub
+                        </a>
+                    </Card>
+
+                    {/* LinkedIn */}
+                    <Card className="text-center transition-all duration-300 hover:-translate-y-1 hover:opacity-95">
+                        <FaLinkedin
+                            size={34}
+                            className="mx-auto text-main"
+                        />
+
+                        <h3 className="mt-5 text-xl font-semibold text-main">
+                            LinkedIn
+                        </h3>
+
+                        <p className="mt-3 text-secondary">
+                            linkedin.com/in/hadsapong-lee-28a783342
+                        </p>
+
+                        <a
+                            href={contact.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-6 inline-block text-primary transition hover:opacity-90"
+                        >
+                            Visit LinkedIn
                         </a>
                     </Card>
                 </div>

@@ -32,16 +32,7 @@ const About = () => {
                                 Computer Science Student
                             </p>
 
-                            <div className="mt-6 space-y-4">
-                                <div className="flex justify-between">
-                                    <span className="text-secondary">
-                                        Location
-                                    </span>
-
-                                    <span className="text-main">
-                                        Thailand
-                                    </span>
-                                </div>
+                            <div className="mt-6 space-y-5">
 
                                 <div className="flex justify-between">
                                     <span className="text-secondary">
@@ -49,17 +40,27 @@ const About = () => {
                                     </span>
 
                                     <span className="text-main">
-                                        Full-Stack
+                                        Backend
                                     </span>
                                 </div>
 
                                 <div className="flex justify-between">
                                     <span className="text-secondary">
-                                        Cloud
+                                        Date of Birth
                                     </span>
 
                                     <span className="text-main">
-                                        AWS
+                                        4 Oct. 2003 
+                                    </span>
+                                </div>
+
+                                <div className="flex justify-between">
+                                    <span className="text-secondary">
+                                        Language Spoken
+                                    </span>
+
+                                    <span className="text-main">
+                                        Thai, English
                                     </span>
                                 </div>
                             </div>
@@ -67,19 +68,18 @@ const About = () => {
                     </Card>
 
                     {/* Content */}
-                    <div className="space-y-8">
+                    <div className="space-y-5">
                         <Card>
                             <h3 className="mb-5 text-xl font-bold text-main">
                                 Introduction
                             </h3>
 
                             <p className="leading-8 text-secondary">
-                                I'm a Computer Science student passionate about
-                                software development, cloud computing, and
-                                building practical web applications. I enjoy
-                                learning new technologies and continuously
-                                improving my skills through personal and
-                                academic projects.
+                                I'm a Computer Science student passionate about Backend Development and cloud computing.
+                                 I love designing system logic and building practical web applications using tools like 
+                                 Go, GIN, and SQL. My ultimate career goal is to become a System Analyst, 
+                                 and I am always looking for opportunities to challenge my skills with real-world, 
+                                 industry-level projects.
                             </p>
                         </Card>
 
@@ -89,15 +89,15 @@ const About = () => {
                             </h3>
 
                             <p className="text-secondary">
-                                Bachelor of Computer Science
-                            </p>
-
-                            <p className="mt-2 text-secondary">
                                 Bangkok University
                             </p>
 
                             <p className="mt-2 text-secondary">
-                                Major in Cloud Computing
+                                School of Information Technology and Innovation
+                            </p>
+
+                            <p className="mt-2 text-secondary">
+                                Major in Computer Science
                             </p>
                         </Card>
 
@@ -106,13 +106,15 @@ const About = () => {
                                 Interests
                             </h3>
 
-                            <div className="flex flex-wrap gap-3">
+                            <div className="flex flex-wrap gap-2.5">
                                 {[
-                                    "Web Development",
-                                    "Cloud Computing",
+                                    
+                                    
                                     "Backend Development",
+                                    "System Analysis",
+                                    "System Design",                            
                                     "Artificial Intelligence",
-                                    "UI / UX",
+                                    "Cloud Computing",
                                 ].map((item) => (
                                     <span
                                         key={item}

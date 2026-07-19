@@ -4,11 +4,12 @@ import Section from "@/components/common/Section";
 import SectionTitle from "@/components/common/SectionTitle";
 
 const skills = {
-    Languages: [
-        "TypeScript",
-        "JavaScript",
+    Languages: [        
         "Go",
         "Python",
+        "Java",
+        "TypeScript",
+        "JavaScript",
         "SQL",
     ],
 
@@ -20,22 +21,34 @@ const skills = {
 
     Backend: [
         "Go",
+        "Gin",
         "Node.js",
         "Express",
-        "REST API",
+        "FastAPI",
+        "Rest API",
     ],
 
     Database: [
         "PostgreSQL",
-        "Prisma",
+        "MySQL",        
         "GORM",
+        "Prisma",
     ],
 
-    Cloud: [
-        "AWS",
-        "Docker",
+    Software: [
+        "VS Code",
+        "Postman",
         "Git",
         "GitHub",
+        "PGAdmin 4",
+        "Docker",
+    ],
+
+    Other: [
+        "Figma",
+        "Photoshop",
+        "Illustrator",
+        "Premiere Pro",
     ],
 };
 
