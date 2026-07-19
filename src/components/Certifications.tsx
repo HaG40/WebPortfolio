@@ -5,7 +5,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import { useState } from "react";
 import { certifications } from "@/data/certifications";
 import {smallCertifications} from "@/data/certifications";
-import { FaChevronDown, FaChevronUp, FaDownLong } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa6";
 
 const Certifications = () => {
 
