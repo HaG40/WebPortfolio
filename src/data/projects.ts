@@ -2,10 +2,10 @@ import job1 from "@/assets/projects/featured/job1.png";
 import job2 from "@/assets/projects/featured/job2.png";
 import job3 from "@/assets/projects/featured/job3.png";
 import job4 from "@/assets/projects/featured/job4.png";
-import heartdisease from "@/assets/projects/heart-disease.png";
-import volunthai from "@/assets/projects/volunthai.png";
-import bufaq from "@/assets/projects/bufaq.png";
-import bufaqcode from "@/assets/projects/bufaqbackend.png";
+import heartdisease from "@/assets/projects/additional/heart-disease.png";
+import volunthai from "@/assets/projects/additional/volunthai.png";
+import bufaq from "@/assets/projects/additional/bufaq.png";
+import bufaqcode from "@/assets/projects/additional/bufaqbackend.png";
 
 export type FeaturedProject = {
   title: string;
