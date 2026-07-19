@@ -2,6 +2,10 @@ import job1 from "@/assets/projects/featured/job1.png";
 import job2 from "@/assets/projects/featured/job2.png";
 import job3 from "@/assets/projects/featured/job3.png";
 import job4 from "@/assets/projects/featured/job4.png";
+import heartdisease from "@/assets/projects/heart-disease.png";
+import volunthai from "@/assets/projects/volunthai.png";
+import bufaq from "@/assets/projects/bufaq.png";
+import bufaqcode from "@/assets/projects/bufaqbackend.png";
 
 export type FeaturedProject = {
   title: string;
@@ -76,7 +80,7 @@ export const additionalProjects: AdditionalProject[] = [
 
     technologies: ["Streamlit", "Scikit-Learn", "Pandas", "NumPy", "Python"],
 
-    image: "src/assets/projects/heart-disease.png",
+    image: heartdisease,
 
     github:
       "https://github.com/HaG40/Heart-Disease-Prediction-Model-with-Web-Application",
@@ -88,7 +92,7 @@ export const additionalProjects: AdditionalProject[] = [
 
     technologies: ["React", "Express", "TypeScript", "PostgreSQL"],
 
-    image: "src/assets/projects/volunthai.png",
+    image: volunthai,
 
     github: "https://github.com/HaG40/CS319Project",
   },
@@ -99,8 +103,8 @@ export const additionalProjects: AdditionalProject[] = [
 
     technologies: ["FastAPI", "Groq API", "Python"],
 
-    image: "src/assets/projects/bufaq.png",
+    image: bufaq,
 
-    code: "src/assets/projects/bufaqbackend.png",
+    code: bufaqcode,
   },
 ];
