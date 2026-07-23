@@ -6,6 +6,7 @@ import heartdisease from "@/assets/projects/additional/heart-disease.png";
 import volunthai from "@/assets/projects/additional/volunthai.png";
 import bufaq from "@/assets/projects/additional/bufaq.png";
 import bufaqcode from "@/assets/projects/additional/bufaqbackend.png";
+import mailsystem from "@/assets/projects/additional/mailsystem.png";
 
 export type FeaturedProject = {
   title: string;
@@ -106,5 +107,18 @@ export const additionalProjects: AdditionalProject[] = [
     image: bufaq,
 
     code: bufaqcode,
+  },
+
+  {
+    title: "Mail System with Role-Based Rule (CS436)",
+
+    description:
+      "A secure web-based mail system featuring role-based authentication and authorization. Users are assigned different roles and permissions to control access to system features and email management.",
+
+    technologies: ["ASP.NET", "C#", "Microsoft Azure", "Bootstrap"],
+
+    image: mailsystem,
+
+    github: "https://github.com/Hadsapong-Lee/FinalProject_CS436",
   },
 ];

@@ -16,6 +16,7 @@ const skills = {
     Frontend: [
         "React",
         "Tailwind CSS",
+        "Bootstrap CSS",
         "Vite",
     ],
 
